@@ -12,7 +12,7 @@ function guess() {
   let userNum = prompt('Угадай число от 1 до 100', ''); 
 
  if (userNum === null) {
-   alert(`Досвидос!!!`);
+   alert(`Игра окончена`);
   } 
 
  if (isNaN(userNum)) {
