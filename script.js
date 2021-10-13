@@ -11,20 +11,20 @@ function guessNum(serNum) {
 function guess() {
   let userNum = prompt('Угадай число от 1 до 100', ''); 
 
- if (userNum === null) {
+ if (userNum === null) {               //если нажал отмена
    alert(`Игра окончена`);
   } 
 
- if (isNaN(userNum)) {
+ if (isNaN(userNum)) {                //ввел строку
    alert('Введи число!');
  return guess(userNum)
   }
 
- if (userNum === null) {
+ if (userNum === null) {             
  return
   }
 
- if (!isNum(userNum)) {
+ if (!isNum(userNum)) {               //проверка на число
    userNum = +userNum;
   }
 
@@ -38,7 +38,7 @@ function guess() {
  return guess(userNum)
  }
 
- else if (userNum !== Number) {               
+ else if (userNum !== Number) {                  // 
    alert('Поздравляю, Вы угадали!!!');
    alert('Игра окончена')
  return
